@@ -17,6 +17,7 @@
       <div>
         <p class="eyebrow">Strength session</p>
         <h1 id="exercise-title">Exercise</h1>
+        <p id="exercise-prescription" class="prescription"></p>
       </div>
       <button id="install-button" class="icon-button install-button" type="button" hidden aria-label="Install app" title="Install app">
         <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 20h14"/></svg>
@@ -48,9 +49,9 @@
       </div>
     </section>
 
-    <details class="description-panel">
+    <details class="description-panel" open>
       <summary>
-        <span>Description</span>
+        <span>How to perform</span>
         <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
       </summary>
       <div class="description-content">
@@ -59,12 +60,23 @@
       </div>
     </details>
 
+    <section class="workout-panel" aria-labelledby="workout-heading">
+      <div class="workout-heading-row">
+        <div>
+          <p class="eyebrow">8 functional movements</p>
+          <h2 id="workout-heading">This workout</h2>
+        </div>
+        <button id="new-workout-button" class="secondary-button" type="button">Finish &amp; generate next</button>
+      </div>
+      <div id="workout-list" class="workout-list"></div>
+    </section>
+
     <nav class="exercise-nav" aria-label="Exercise navigation">
       <button id="previous-button" type="button">
         <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
         <span>Previous</span>
       </button>
-      <p><strong id="exercise-number">1</strong><span>of</span><span id="exercise-total">18</span></p>
+      <p><strong id="exercise-number">1</strong><span>of</span><span id="exercise-total">8</span></p>
       <button id="next-button" type="button">
         <span>Next</span>
         <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
