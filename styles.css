@@ -220,7 +220,7 @@ svg {
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   gap: 10px;
-  padding-top: 18px;
+  padding: 0 0 18px;
 }
 
 .exercise-nav button {
