@@ -52,6 +52,13 @@ h1 {
   letter-spacing: 0;
 }
 
+.prescription {
+  margin: 5px 0 0;
+  color: #157f68;
+  font-size: .95rem;
+  font-weight: 800;
+}
+
 .position-stage {
   position: relative;
   display: grid;
@@ -232,6 +239,29 @@ svg {
 .exercise-nav p { display: flex; gap: 5px; margin: 0; color: #6b7c88; font-size: .85rem; }
 .exercise-nav strong { color: #102a43; }
 
+.workout-panel {
+  margin-top: 26px;
+  padding-top: 22px;
+  border-top: 1px solid #dfe6ea;
+}
+
+.workout-heading-row { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+.workout-heading-row h2 { margin: 0; font-size: 1.25rem; }
+.secondary-button { padding: 9px 12px; border: 1px solid #b9c8d1; border-radius: 7px; background: #fff; color: #29465b; font-weight: 750; cursor: pointer; }
+.workout-list { display: grid; gap: 8px; margin-top: 14px; }
+.workout-item { border: 1px solid #dfe6ea; border-radius: 8px; background: #f8fafb; }
+.workout-item[open] { border-color: #9eb9c7; background: #fff; }
+.workout-item summary { display: grid; grid-template-columns: 30px 1fr auto; align-items: center; gap: 9px; min-height: 58px; padding: 8px 12px; cursor: pointer; list-style: none; }
+.workout-item summary::-webkit-details-marker { display: none; }
+.workout-item .slot-number { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: #e4eef2; color: #29465b; font-size: .78rem; font-weight: 800; }
+.workout-item .item-title { display: block; font-weight: 800; }
+.workout-item .item-rx { display: block; margin-top: 2px; color: #157f68; font-size: .82rem; font-weight: 750; }
+.workout-item .chevron { width: 18px; transition: transform .2s ease; }
+.workout-item[open] .chevron { transform: rotate(180deg); }
+.workout-instructions { padding: 0 12px 14px 51px; }
+.workout-instructions p { margin: 0 0 10px; color: #405663; line-height: 1.5; }
+.jump-button { padding: 0; border: 0; background: transparent; color: #0f6b8a; font-weight: 750; cursor: pointer; }
+
 .install-button { flex: 0 0 auto; }
 
 dialog {
@@ -257,6 +287,7 @@ button:active:not(:disabled) { transform: scale(.97); }
   .timer-actions { grid-template-columns: 48px minmax(116px, 1fr) 94px; gap: 8px; }
   .icon-button { width: 44px; height: 44px; }
   .exercise-nav button span { display: none; }
+  .workout-heading-row { align-items: flex-start; flex-direction: column; }
 }
 
 @media (min-width: 700px) {
